@@ -1,4 +1,6 @@
 {
-  "item.tutorial_mod.boulder": "Boulder"
+  "item.tutorial_mod.rune_tablet": "Rune tablet",
+  "item.tutorial_mod.slate_of_rock": "Slate of rock",
 
+  "block.tutorial_mod.rune_inscriber": "Rune inscriber"
 }

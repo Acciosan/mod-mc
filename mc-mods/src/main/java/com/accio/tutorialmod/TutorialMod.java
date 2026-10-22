@@ -1,5 +1,6 @@
 package com.accio.tutorialmod;
 
+import com.accio.tutorialmod.block.ModBlocks;
 import com.accio.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
@@ -39,6 +40,9 @@ public class TutorialMod
 
         //call the modEventBus and register all items of the mod
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -56,7 +60,12 @@ public class TutorialMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.BOULDER);
+            event.accept(ModItems.RUNE_TABLET);
+            event.accept(ModItems.SLATE_OF_ROCK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS){
+            event.accept(ModBlocks.RUNE_INSCRIBER);
         }
     }
 

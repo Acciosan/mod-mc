@@ -17,10 +17,11 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS,TutorialMod.MOD_ID);
 
     //barebone item
-    public static final RegistryObject<Item>BOULDER =ITEMS.register("boulder",
+    public static final RegistryObject<Item>RUNE_TABLET =ITEMS.register("rune_tablet",
             ()->new Item(new Item.Properties()));
 
-
+    public static final RegistryObject<Item>SLATE_OF_ROCK =ITEMS.register("slate_of_rock",
+            ()->new Item(new Item.Properties()));
 
 
 

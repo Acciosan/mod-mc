@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tutorial_mod:block/rune_inscriber"
+  }
+
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tutorial_mod:item/boulder"
+    "layer0": "tutorial_mod:item/rune_tablet"
   }
 }
